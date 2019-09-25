@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+header, nav{
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 60px;
+}
+
+
+
+header nav ul li a{
+    display: block;
+    padding: 0 2rem;
+    font-size: 1.4rem;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+
+header nav ul li a:hover{
+    text-decoration: none;
+    color: hsla(189, 100%, 52%, 1);
+    transition: .7s ease-in-out;
+    transform: translateY(5px);
+}
+
+.menu{
+    position: absolute;
+    right: 20px;
+    padding: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.menu .bar,
+.menu .bar::before,
+.menu .bar::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 2rem;
+    background-color: white;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transition: 650ms;
+    }
+
+.menu .bar::before{
+    top: -1rem;
+}
+
+.menu .bar::after{
+    top: 1rem;
+}
+
+.active .bar{
+    background: transparent;
+}
+
+.active .bar::before{
+    transform: rotate(-45deg);
+}
+
+.active .bar::after{
+    transform: rotate(45deg);
+}
+
+.active .bar::before,
+.active .bar::after{
+    top: 0;
+}
+
+@media(max-width: 800px){
+    header, nav{
+      background:hsla(17, 100%, 0%, 0.52)
+    }
+
+    header nav{
+        top: 60px;
+        min-height: 100vh;
+        left: -100%;
+        transition: .5s ease-in-out;
+    }
+    header nav ul{
+        flex-direction: column;
+    }
+    .nav-active{
+        left: 0;
+    }
+    .menu{
+        display: block;
+    }
+
+}
+
+
+
+
+
+.page-heading{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('/PortfolioAssets/road_marking_bridge_123398_1920x1080.jpg')fixed no-repeat center center/cover
+}
+
+.page-heading h1{
+    font-size: 3rem;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+.page-heading h2{
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+
+
+@media(min-width: 768px){
+    .page-heading h1{
+        font-size: 5rem;
+    }
+    .page-heading h2{
+        font-size: 3.5rem;
+    }
+}
+
+
+footer{
+    height: 100vh;
+    background: black;
+}
+
+
+
+.signature-row{
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: hsla(189, 100%, 52%);
+    background: url('/PortfolioAssets/the-blurred-819385_1920.jpg') center center/cover;
+}
+
+
+hr{
+    background: white;
+    height: 1px;
+    width: 80%;
+    margin: 1rem auto;
+}
+
+strong{
+    color: hsla(189, 100%, 52%, 1);
+}
+.about-me{
+    margin: 0;
+    padding: 0;
+}
+
+.about-me-content{
+    background:url('/PortfolioAssets/background-2462434_1920.jpg') center center/cover;
+    width: 100%;
+    margin: 0; padding: 0;
+}
+
+.about-me img{
+    width: 100%;
+    margin: 0; padding: 0;
+}
+
+.aboute-me p{
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+

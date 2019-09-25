@@ -1,0 +1,30 @@
+/* Google Fonts 
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Gentium Book Basic', serif;
+*/
+@import url(https://fonts.googleapis.com/css?family=Alfa+Slab+One|Gentium+Book+Basic&display=swap);
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Alfa Slab One', cursive;
+	font-weight: bolder;
+	letter-spacing: .2rem;
+}
+
+p,a{
+	font-family: 'Gentium Book Basic', serif;
+}
+
+.flex-center-column{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+@media(min-width: 768px){
+	.dark-on-scroll{
+		background-color: hsla(83, 100%, 0%, 0.4);
+		height: 65px;
+		transition: 1s ease-in-out;
+	}
+}
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> <!-- Boostrap CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Font-Awesome-CDN -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="aos.css">
+	<script src="aos.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script> <!-- Jquery CDN -->
+	<title>Szaniszló Árpád</title>
+</head>
+<body>
+<header id="navbar" data-aos="fade-top">
+  <nav id="toggle">
+    <ul>
+      <li><a href="#greetings" class="nav-btn">Contact</a></li>
+      <li><a href="#studies" class="nav-btn">Tanulmányok</a></li>
+      <li><a href="#skills" class="nav-btn" >Képességek</a></li>
+      <li><a href="#introductions" class="nav-btn" id="experience">Tapasztalatok</a></li>
+      <li><a href="#greetings" class="nav-btn">Bemutatkozás</a></li>
+    </ul>
+	</nav>
+	<div class="menu">
+			<span class="bar"></span>
+	</div>
+</header>
+<main>
+	<div class=" page-heading greetings">
+		<div class="page-heading-wrapper" data-aos="zoom-in">
+			<h1 class="type">Arpad Szaniszlo</h1>
+			<hr>
+			<h2>Front End Web | <strong class="smart-type"></strong></h2>
+			<a href="#footer" class="watch-more-btn"></a>
+		</div>
+	</div>
+</main>
+
+<!--<div class="signature-row">
+		<div class="signature-wrapper flex-center-column">
+			<div class="signature">
+				<img src="/PortfolioAssets/signature5d8b2c527c18c.gif" alt="">
+			</div>
+		</div>
+	</div> -->
+
+
+<footer></footer>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+<script src="script.js"></script>
+
+
+<script src="/typed.js"></script>
+<script type="text/javascript">
+	var typed = new Typed('.smart-type', {
+  	strings: ['Developer','Designer','Creator'],
+	  smartBackspace: true,
+	  typeSpeed: 100,
+	  backSpeed: 100,
+	  loop: true
+});
+</script>
+
+
+<script type="text/javascript">
+
+
+	// Menu Bar and Nav Toggle Function
+	$("document").ready(function () {
+		$(".menu").click(function () {
+			$(".menu").toggleClass("active");
+			$("nav").toggleClass("nav-active");
+		});
+	});
+
+
+
+
+
+
+	$(window).on('scroll', function() {
+	if($(window).scrollTop()) {
+		$('nav').addClass('dark-on-scroll');
+	} else {
+		$('nav').removeClass('dark-on-scroll');
+	}
+})
+
+
+
+	AOS.init({
+		duration: 2000,
+	});
+
+
+</script>
+</body>
+</html>

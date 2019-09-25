@@ -120,7 +120,7 @@ header nav ul li a:hover{
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('PortfolioAssets/road_marking_bridge_123398_1920x1080.jpg')fixed no-repeat center center/cover
+    background: url('/PortfolioAssets/road_marking_bridge_123398_1920x1080.jpg')fixed no-repeat center center/cover
 }
 
 .page-heading h1{
@@ -163,25 +163,6 @@ hr{
 
 strong{
     color: hsla(189, 100%, 52%, 1);
-}
-.about-me{
-    margin: 0;
-    padding: 0;
-}
-
-.about-me-content{
-    background:url('/PortfolioAssets/background-2462434_1920.jpg') center center/cover;
-    width: 100%;
-    margin: 0; padding: 0;
-}
-
-.about-me img{
-    width: 100%;
-    margin: 0; padding: 0;
-}
-
-.aboute-me p{
-    text-align: left;
 }
 
 

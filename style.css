@@ -120,7 +120,7 @@ header nav ul li a:hover{
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('/PortfolioAssets/road_marking_bridge_123398_1920x1080.jpg')fixed no-repeat center center/cover
+    background: url('PortfolioAssets/road_marking_bridge_123398_1920x1080.jpg')fixed no-repeat center center/cover
 }
 
 .page-heading h1{
